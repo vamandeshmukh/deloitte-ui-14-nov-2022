@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deloitte Login | 14 Nov 2022 Batch</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://www2.deloitte.com/content/dam/Deloitte/in/Images/promo_images/in-deloitte-logo-1x1-noexp.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        const handleLogin = () => {
+            document.getElementById('failedLogin').innerHTML = ``;
+            let userName = document.getElementById('userName').value;
+            let password = document.getElementById('password').value;
+            if (userName === 'Vaman' && password == 'Vaman') {
+                console.log(`${userName} ${password}`);
+                document.getElementById("loginForm").reset();
+                document.getElementById('successLogin').innerHTML = `Hi ${userName}! You've logged in successfully.`;
+                $("#loginModal").modal();
+            }
+            else {
+                console.log(`${userName} ${password}`);
+                document.getElementById("loginForm").reset();
+                document.getElementById('failedLogin').innerHTML = `Invalid credentials.`;
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class=" mt-3 pt-3">
+            <img class="pb-4" height="60px"
+                src="https://logos-download.com/wp-content/uploads/2016/10/Deloitte_logo_black.png">
+            <span class="text-primary display-4"> Login Form</span>
+        </div>
+        <hr />
+        <div class="bg-white col-4 shadow mx-3 my-3 px-3 py-3 content-center">
+            <p class="lead pb-3">Login here to access Deloitte app</p>
+            <form class="form form-group" id="loginForm" onsubmit="handleLogin();return false">
+                <input class="form-control mb-3" id="userName" type="text" name="userName" value=""
+                    placeholder="Enter userName" autofocus required />
+                <input class="form-control mb-3" id="password" type="password" name="password" value=""
+                    placeholder="Enter password" required />
+                <input class="form-control btn btn-outline-primary mb-3" type="submit" value="Login" />
+            </form>
+        </div>
+        <div class="col-4 mx-3 my-3 px-3 py-3 content-center">
+            <p class="text-danger" id="failedLogin"></p>
+        </div>
+        <div>
+            <div class="modal fade" id="loginModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-success" id="exampleModalLabel">Success!</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="successLogin">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
