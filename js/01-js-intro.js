@@ -63,26 +63,32 @@
 
 
 
-const myArray = [10, 20, 30];
+// const myArray = [10, 20, 30];
 
 
-const myArray2 = [10, 20.5, 'abc', false];
+// const myArray2 = [10, 20.5, 'abc', false];
 
 
-console.log(myArray2);
+// console.log(myArray2);
 
-	myArray2[2] = 'def';
+// 	myArray2[2] = 'def';
 
-    console.log(myArray2);
+//     console.log(myArray2);
 
-    myArray2 = 'abc';
+//     myArray2 = 'abc';
 
-    console.log(myArray2);
-
-
+//     console.log(myArray2);
 
 
+// Objects in JS 
 
+const empData = {
+    eid: 101,
+    firstName: 'Sonu',
+    salary: 10.5
+};
+
+console.log(empData);
 
 
 
