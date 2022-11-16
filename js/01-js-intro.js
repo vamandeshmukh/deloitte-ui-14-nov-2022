@@ -23,25 +23,76 @@
 
 // let num = 10;
 
-let myData;
-console.log(myData);
-console.log(typeof (myData));
+// let myData;
+// console.log(myData);
+// console.log(typeof (myData));
 
-myData = 10;
-console.log(myData);
-console.log(typeof (myData));
+// myData = 10;
+// console.log(myData);
+// console.log(typeof (myData));
 
-myData = "abc";
-console.log(myData);
-console.log(typeof (myData));
+// myData = "abc";
+// console.log(myData);
+// console.log(typeof (myData));
 
-myData = false;
-console.log(myData);
-console.log(typeof (myData));
+// myData = false;
+// console.log(myData);
+// console.log(typeof (myData));
 
-myData = 20;
-console.log(myData);
-console.log(typeof (myData));
+// myData = 20;
+// console.log(myData);
+// console.log(typeof (myData));
+
+
+//  falsy values : false, 0, '', null, undefined
+//  truthy values : all the other values 
+
+// let firstName = 'Vaman';
+
+// operators 
+
+// console.log(10 == '10');
+
+// console.log(10 === '10');
+
+
+// console.log(10 != '10');
+
+// console.log(10 !== '10');
+
+
+
+
+const myArray = [10, 20, 30];
+
+
+const myArray2 = [10, 20.5, 'abc', false];
+
+
+console.log(myArray2);
+
+	myArray2[2] = 'def';
+
+    console.log(myArray2);
+
+    myArray2 = 'abc';
+
+    console.log(myArray2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
