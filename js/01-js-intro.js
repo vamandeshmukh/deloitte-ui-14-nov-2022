@@ -23,14 +23,25 @@
 
 // let num = 10;
 
-let myData = 10;
-
+let myData;
 console.log(myData);
 console.log(typeof (myData));
 
+myData = 10;
+console.log(myData);
+console.log(typeof (myData));
 
+myData = "abc";
+console.log(myData);
+console.log(typeof (myData));
 
+myData = false;
+console.log(myData);
+console.log(typeof (myData));
 
+myData = 20;
+console.log(myData);
+console.log(typeof (myData));
 
 
 
