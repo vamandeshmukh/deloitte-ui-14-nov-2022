@@ -36,11 +36,14 @@
 // problems of Async JS 
 
 const getFun = () => {
+    // use settimeout
     return { idea: 'Eat and sleep!' };
 };
 
+// line 1
 let myFun = getFun();
 
+// line 2
 console.log(myFun.idea);
 
 
