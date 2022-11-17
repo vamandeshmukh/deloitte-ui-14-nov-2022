@@ -14,4 +14,9 @@ const empData = {
     }
 };
 
-console.log(empData.firstName);
+// console.log(empData.address.city);
+// console.log(empData.phones[1]);
+
+for (const elem in empData) {
+    console.log(elem);
+}
