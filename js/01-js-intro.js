@@ -88,7 +88,7 @@ const empData = {
     salary: 10.5,
     isMarried: false,
     phones: [9876543210, 6785431209],
-    address: { city: 'Hyderabad', pin: 500001 }
+    address: { street: 'Koti', city: 'Hyderabad', pin: 500001 }
 };
 
 // console.log(empData);
