@@ -14,8 +14,10 @@ const myArray = [22, 9, 31, 25, 17, 30];
 // }
 console.log(myArray);
 
-const myArray2 = myArray.map((arg) => { return arg * 2 });
+const myArray2 = myArray.map((arg) => { return arg * 2; });
 // const myArray2 = myArray.map(arg => arg * 2); // shortcut 
-
 console.log(myArray2);
+
+const myArray3 = myArray.filter((e) => { return e > 20; });
+console.log(myArray3);
 
