@@ -1,3 +1,4 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 // arrays in JS 
 
@@ -21,3 +22,5 @@ console.log(myArray2);
 const myArray3 = myArray.filter((e) => { return e > 20; });
 console.log(myArray3);
 
+// console.log('iterate array with forEach method:');
+myArray.forEach((e) => { console.log(e) });
