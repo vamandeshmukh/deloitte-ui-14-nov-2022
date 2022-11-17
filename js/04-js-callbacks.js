@@ -21,11 +21,27 @@
 // fun(10);
 // fun({ city: 'Hyderabad', pin: 500001 });
 
-const fun = (arg) => {
-    console.log('fun function');
-    arg();
-}
+// const someArgToSupply = () => {
+//     console.log('someArgToSupply function');
+// };
 
-fun();
+// const fun = (arg) => {
+//     console.log('fun function');
+//     arg();
+// }
+
+// fun(someArgToSupply);
+
+
+// problems of Async JS 
+
+const getFun = () => {
+    return { idea: 'Eat and sleep!' };
+};
+
+let myFun = getFun();
+
+console.log(myFun.idea);
+
 
 
