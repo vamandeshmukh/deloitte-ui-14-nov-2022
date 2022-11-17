@@ -32,25 +32,46 @@
 
 // fun(someArgToSupply);
 
-
+// =======================
 // problems of Async JS 
+// =======================
 
-const getFun = () => {
+
+// const getFun = () => {
+//     console.log('getFun called');
+//     setTimeout(() => {
+//         return { idea: 'Eat and sleep!' };
+//     }, 2000);
+// };
+
+// // line 1
+// let myFun = getFun();
+
+// // line 2
+// console.log(myFun.idea);
+
+// ============================
+// solution with callback in JS 
+// ============================
+
+const getFun = (callBack) => {
     console.log('getFun called');
     setTimeout(() => {
-        return { idea: 'Eat and sleep!' };
+        callBack({ idea: 'Eat and sleep!' });
     }, 2000);
 };
 
-// line 1
-let myFun = getFun();
+const myFun = (arg) => {
+    console.log(arg.idea);
+};
 
-// line 2
-console.log(myFun.idea);
-
-
+getFun(myFun);
 
 
+// short version 
+// getFun((arg) => {
+//     console.log(arg.idea);
+// });
 
 
 // setTimeout(arg1, arg2);
