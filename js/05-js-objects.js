@@ -20,3 +20,9 @@ const empData = {
 for (const elem in empData) {
     console.log(elem);
 }
+
+console.log('keys of empData object:');
+console.log(Object.keys(empData));
+
+
+
