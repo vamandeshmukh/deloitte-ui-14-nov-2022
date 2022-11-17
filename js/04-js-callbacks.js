@@ -67,8 +67,9 @@ const myFun = (arg) => {
 
 getFun(myFun);
 
-
 // short version 
+// syntax: getFun(() => { });
+
 // getFun((arg) => {
 //     console.log(arg.idea);
 // });
