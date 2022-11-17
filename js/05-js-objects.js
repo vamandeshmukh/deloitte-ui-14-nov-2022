@@ -24,5 +24,7 @@ for (const elem in empData) {
 console.log('keys of empData object:');
 console.log(Object.keys(empData));
 
+console.log('values of empData object:');
+console.log(Object.values(empData));
 
 
