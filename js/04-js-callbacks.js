@@ -65,7 +65,7 @@ const myFun = (arg) => {
     console.log(arg.idea);
 };
 
-getFun(myFun);
+// getFun(myFun);
 
 // short version 
 // syntax: getFun(() => { });
@@ -80,5 +80,53 @@ getFun(myFun);
 // setTimeout(() => {
 // // code
 // }, 2000);
+
+
+
+
+
+// function f2 () {}
+
+// const f1 = () => {};
+
+// fun(() => {
+//     // vody 
+// });
+
+// fun(num => {
+//     // vody 
+// });
+
+
+// function that needs a callback function as argument 
+const fun = (arg) => {
+    arg({ message: 'Have fun!' });
+};
+
+// call the above function 
+
+// 1 full version 
+
+
+// 2 short version 
+fun((someArg) => { console.log(someArg.message) });
+
+// 3 shorter version 
+fun(someArg => { console.log(someArg.message) });
+
+// 4 even shorter version 
+fun(someArg => console.log(someArg.message));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
