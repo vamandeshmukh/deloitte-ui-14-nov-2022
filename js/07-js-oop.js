@@ -6,7 +6,7 @@ const userName = 'Vaman';
 // const greetingMessage = 'Hi ' + userName + '!'; // this line 
 const greetingMessage = `Hi ${userName}!`; // this line 
 
-console.log(greetingMessage);
+// console.log(greetingMessage);
 
 // class and object in JS 
 
@@ -17,15 +17,20 @@ class Employee {
     firstName; // name, id, value, user 
     salary;
 
-    constructor () {
-        // code 
+    constructor(eid, firstName, salary) {
+        this.eid = eid;
+        this.firstName = firstName;
+        this.salary = salary;
     }
 
     work = () => {
-        // code 
+        console.log(`${this.firstName} works!`);
     };
-
 }
 
-
-
+const emp = new Employee();
+// emp.firstName = 'Sonu';
+emp.work();
+const emp2 = new Employee(102, 'Monu', 90000);
+// emp.firstName = 'Sonu';
+emp2.work();
