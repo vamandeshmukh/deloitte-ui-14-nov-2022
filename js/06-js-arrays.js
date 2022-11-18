@@ -1,5 +1,8 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
+// see these methods: 
+// filter  
+
 // arrays in JS 
 
 const myArray = [22, 9, 31, 25, 17, 30];
