@@ -34,3 +34,13 @@ emp.work();
 const emp2 = new Employee(102, 'Monu', 90000);
 // emp.firstName = 'Sonu';
 emp2.work();
+
+class ContractualEmployee extends Employee {
+
+}
+
+const conEmp = new ContractualEmployee();
+conEmp.firstName = 'Tonu';
+conEmp.work();
+
+
