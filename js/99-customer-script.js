@@ -1,5 +1,7 @@
 
 class Customer {
+
+    
     // fields and methods 
 }
 
